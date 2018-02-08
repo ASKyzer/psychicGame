@@ -7,8 +7,6 @@ var alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m",
 var wins = 0;
 //computer's score or number of times you fail to guess correctly before the tries runs out
 var losses = 0;
-// the number of guesses you have total
-var guesses = 9;
 // number of guesses you have to start and will count down
 var guessesLeft = 9;
 // this array will hold the letters you've already guessed
@@ -38,7 +36,7 @@ var updateAlreadyGuessed = function() {
 
 // when the game is over and resets, we want the win loss count to stay so we have to reset the rest of the variables so we need to call these fucntions
 var reset = function (){
-  totalGuesses = 9;
+  // the number of guess back to 9 and empty out the letters used array
   guessesLeft = 9;
   guessedLetters = [];
 
